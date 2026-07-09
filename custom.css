@@ -110,3 +110,10 @@
 .composite-bar > .monaco-action-bar > ul.actions-container > li.action-item:nth-child(n+4) {
     display: none !important;
 }
+
+/* ── 14. EXPLORER FOLDER ACCENT ─────────────────────────── */
+/* Give folders a slight subtle touch of Hologram Haze for distinction */
+.monaco-list-row .folder-icon + .label-name,
+.monaco-list-row .monaco-icon-label.folder-icon .label-name {
+    color: rgba(167, 139, 250, 0.5) !important;
+}

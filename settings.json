@@ -5,6 +5,8 @@
 
   "workbench.sideBar.location": "right",
   "workbench.activityBar.location": "top",
+  "workbench.tree.indent": 20,
+  "workbench.tree.renderIndentGuides": "always",
   "editor.minimap.enabled": false,
   "workbench.panel.alignment": "center",
 
