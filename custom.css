@@ -1,0 +1,103 @@
+/* ══════════════════════════════════════════════════════════
+   THE CONVERGENCE COCKPIT — Custom CSS Design System
+   ══════════════════════════════════════════════════════════ */
+
+/* ── 1. BIMODAL TYPOGRAPHY ──────────────────────────────── */
+.monaco-workbench {
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.monaco-editor, .monaco-editor .view-lines, .monaco-editor .view-line,
+.monaco-editor .mtk1, .monaco-editor .mtkw, .monaco-editor .mtkz,
+.monaco-editor .mtkcontrol, .monaco-editor .mtkoverflow,
+.monaco-editor .margin, .monaco-editor .editor-widget,
+.xterm, .xterm-rows, code, pre {
+    font-family: 'JetBrains Mono', 'SF Mono', Menlo, Monaco, monospace !important;
+}
+
+/* ── 2. CHAT ZONE — Slight Background Separation ────────── */
+.auxiliarybar, .antigravity-agent-side-panel, .agent-sessions-viewer, .antigravity-agent-mode, .chat-widget {
+    background-color: #1a1a1a !important;
+}
+
+/* ── 3. NEON CURSOR GLOW (Hologram Haze) ────────────────── */
+/* The cursor is your intent pointer. It deserves the accent. */
+.monaco-editor .cursor {
+    box-shadow: 0 0 8px rgba(167, 139, 250, 0.6),
+                0 0 16px rgba(167, 139, 250, 0.25) !important;
+}
+
+/* ── 4. CHAT MARKDOWN TYPOGRAPHY ────────────────────────── */
+.chat-markdown-part, .chat-markdown-part p, .chat-markdown-part span, .chat-markdown-part h1, .chat-markdown-part h2, .chat-markdown-part h3 {
+    font-family: "Nunito", sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.75 !important;
+    letter-spacing: 0.01em !important;
+}
+
+/* ── 5. CHAT INPUT — The Intent Box ─────────────────────── */
+.chat-input-container {
+    border-radius: 8px !important;
+    background-color: #222222 !important;
+}
+
+/* ONLY the AI Chat Submit button gets the Hologram Haze accent. 
+   Engaging the AI is the core action. */
+.chat-input-container .monaco-button, .chat-input-toolbar .monaco-button {
+    background-color: #a78bfa !important;
+    color: #141414 !important;
+}
+.chat-input-container .monaco-button:hover, .chat-input-toolbar .monaco-button:hover {
+    background-color: #f472b6 !important;
+}
+
+/* ── 6. EXPLORER ROW MICRO-ANIMATIONS ───────────────────── */
+.monaco-list-row {
+    transition: background-color 0.15s ease,
+                padding-left 0.12s ease-out !important;
+}
+.monaco-list-row:hover {
+    padding-left: 4px !important;
+}
+
+/* ── 7. TITLE BAR CONSISTENCY ───────────────────────────── */
+.titlebar {
+    font-family: "Nunito", sans-serif !important;
+    letter-spacing: 0.02em !important;
+}
+
+/* ── 8. ULTRA-THIN SCROLLBAR THUMBS ─────────────────────── */
+.scrollbar .slider {
+    border-radius: 4px !important;
+}
+
+/* ── 9. REMOVE JARRING BORDERS/SHADOWS ──────────────────── */
+.monaco-workbench .part, .monaco-workbench .part.editor > .content .editor-group-container {
+    box-shadow: none !important;
+    border: none !important;
+}
+
+/* ── 10. GLOBAL TEXT SELECTION ──────────────────────────── */
+/* Neutral, non-distracting text selection */
+::selection {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+}
+
+/* ── 12. PROCEED BUTTON ─────────────────────────────────── */
+/* Elevate the key flow button via custom JS injected class */
+.btn-proceed-custom {
+    background-color: #a78bfa !important;
+    color: #141414 !important;
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 600 !important;
+    border: none !important;
+}
+
+.btn-proceed-custom:hover {
+    background-color: #f472b6 !important;
+}
+
+
