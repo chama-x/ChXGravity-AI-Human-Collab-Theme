@@ -3,12 +3,15 @@
     // to catch the "Proceed" button when it gets rendered.
     
     function tagProceedButtons() {
-        // Find all elements that might be buttons
-        const elements = document.querySelectorAll('.monaco-button, button, [role="button"]');
+        // Find all elements that might be buttons or action links
+        const elements = document.querySelectorAll('.monaco-button, button, [role="button"], a.action-label');
         
         elements.forEach(el => {
-            // Check if the text content starts with 'Proceed' (to account for shortcut spans)
-            if (el.textContent.trim().startsWith('Proceed')) {
+            // Strip all whitespace and lowercase to handle nested spans or weird formatting
+            const text = el.textContent.toLowerCase().replace(/\s+/g, '');
+            if (text.includes('proceed') || 
+                text.includes('acceptchanges') || 
+                text.includes('acceptall')) {
                 if (!el.classList.contains('btn-proceed-custom')) {
                     el.classList.add('btn-proceed-custom');
                 }
@@ -18,16 +21,9 @@
 
     // Run tagging on DOM mutations to handle dynamic artifact panels
     const observer = new MutationObserver((mutations) => {
-        let shouldRun = false;
-        for (let mutation of mutations) {
-            if (mutation.addedNodes.length > 0 || mutation.type === 'characterData') {
-                shouldRun = true;
-                break;
-            }
-        }
-        if (shouldRun) {
-            tagProceedButtons();
-        }
+        // We'll just run it aggressively on any mutation in the body
+        // because VS Code DOM updates can be tricky to filter perfectly.
+        tagProceedButtons();
     });
 
     // Start observing the workbench body

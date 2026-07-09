@@ -17,7 +17,7 @@
 
 /* ── 2. CHAT ZONE — Slight Background Separation ────────── */
 .auxiliarybar, .antigravity-agent-side-panel, .agent-sessions-viewer, .antigravity-agent-mode, .chat-widget {
-    background-color: #1a1a1a !important;
+    background-color: #1e1e1e !important;
 }
 
 /* ── 3. NEON CURSOR GLOW (Hologram Haze) ────────────────── */
@@ -45,7 +45,7 @@
    Engaging the AI is the core action. */
 .chat-input-container .monaco-button, .chat-input-toolbar .monaco-button {
     background-color: #a78bfa !important;
-    color: #141414 !important;
+    color: #1a1a1a !important;
 }
 .chat-input-container .monaco-button:hover, .chat-input-toolbar .monaco-button:hover {
     background-color: #f472b6 !important;
@@ -78,26 +78,35 @@
 }
 
 /* ── 10. GLOBAL TEXT SELECTION ──────────────────────────── */
-/* Neutral, non-distracting text selection */
+/* Hologram Haze accent with inverted text */
 ::selection {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background-color: #a78bfa !important;
+    color: #1a1a1a !important;
 }
 ::-moz-selection {
-    background-color: rgba(255, 255, 255, 0.15) !important;
+    background-color: #a78bfa !important;
+    color: #1a1a1a !important;
 }
 
 /* ── 12. PROCEED BUTTON ─────────────────────────────────── */
 /* Elevate the key flow button via custom JS injected class */
 .btn-proceed-custom {
-    background-color: #a78bfa !important;
-    color: #141414 !important;
+    background-color: #dfff00 !important; /* Acid Pistachio */
+    color: #1a1a1a !important;
     font-family: "Nunito", sans-serif !important;
     font-weight: 600 !important;
     border: none !important;
+    padding: 2px 8px !important;
+    border-radius: 4px !important;
 }
 
 .btn-proceed-custom:hover {
-    background-color: #f472b6 !important;
+    background-color: #eaff4d !important; /* Brighter Acid Pistachio on hover */
 }
 
-
+/* ── 13. ESSENTIALS ONLY: ACTIVITY BAR ──────────────────── */
+/* Force extreme focus by hiding all sidebar tabs except the first 3 
+   (Explorer, Search, Source Control). */
+.composite-bar > .monaco-action-bar > ul.actions-container > li.action-item:nth-child(n+4) {
+    display: none !important;
+}

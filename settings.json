@@ -1,4 +1,5 @@
 {
+  "editor.semanticHighlighting.enabled": false,
   "editor.accessibilitySupport": "off",
   "antigravity-plus.autoApprove.enabled": true,
 
@@ -13,21 +14,21 @@
   "terminal.integrated.fontSize": 11,
 
   "workbench.colorCustomizations": {
-    "editor.background": "#141414",
+    "editor.background": "#1a1a1a",
     "editor.foreground": "#888888",
-    "sideBar.background": "#141414",
-    "activityBar.background": "#141414",
-    "statusBar.background": "#141414",
-    "statusBarItem.remoteBackground": "#141414",
-    "statusBarItem.remoteForeground": "#6c7086",
-    "titleBar.activeBackground": "#141414",
-    "titleBar.inactiveBackground": "#141414",
-    "panel.background": "#141414",
-    "breadcrumb.background": "#141414",
-    "editorWidget.background": "#1a1a1a",
-    "editorGroupHeader.tabsBackground": "#141414",
-    "tab.activeBackground": "#1a1a1a",
-    "tab.inactiveBackground": "#141414",
+    "sideBar.background": "#1a1a1a",
+    "activityBar.background": "#1a1a1a",
+    "statusBar.background": "#1a1a1a",
+    "statusBarItem.remoteBackground": "#1a1a1a",
+    "statusBarItem.remoteForeground": "#6c6c6c",
+    "titleBar.activeBackground": "#1a1a1a",
+    "titleBar.inactiveBackground": "#1a1a1a",
+    "panel.background": "#1a1a1a",
+    "breadcrumb.background": "#1a1a1a",
+    "editorWidget.background": "#222222",
+    "editorGroupHeader.tabsBackground": "#1a1a1a",
+    "tab.activeBackground": "#222222",
+    "tab.inactiveBackground": "#1a1a1a",
 
     "sideBar.border": "#0000",
     "activityBar.border": "#0000",
@@ -46,9 +47,9 @@
     "editorCursor.foreground": "#a78bfa",
     "terminalCursor.foreground": "#a78bfa",
 
-    "editor.selectionBackground": "#ffffff20",
-    "editor.selectionForeground": "#141414",
-    "editor.selectionHighlightBackground": "#ffffff10",
+    "editor.selectionBackground": "#a78bfa",
+    "editor.selectionForeground": "#1a1a1a",
+    "editor.selectionHighlightBackground": "#a78bfa44",
 
     "editorLineNumber.foreground": "#444444",
     "editorLineNumber.activeForeground": "#888888",
@@ -58,38 +59,83 @@
     "scrollbarSlider.activeBackground": "#ffffff25",
 
     "button.background": "#2a2a2a",
-    "button.foreground": "#cdd6f4",
+    "button.foreground": "#b0b0b0",
     "button.hoverBackground": "#3a3a3a",
     
     "button.secondaryBackground": "#1e1e1e",
-    "button.secondaryForeground": "#a6adc8",
+    "button.secondaryForeground": "#777777",
     "button.secondaryHoverBackground": "#2a2a2a",
 
-    "textLink.foreground": "#cdd6f4",
+    "textLink.foreground": "#b0b0b0",
     "textLink.activeForeground": "#ffffff",
 
-    "activityBarBadge.background": "#c4f042",
-    "activityBarBadge.foreground": "#141414",
-    "badge.background": "#c4f042",
-    "badge.foreground": "#141414",
+    "activityBarBadge.background": "#333333",
+    "activityBarBadge.foreground": "#1a1a1a",
+    "badge.background": "#333333",
+    "badge.foreground": "#1a1a1a",
     
-    "progressBar.background": "#a78bfa",
+    "progressBar.background": "#555555",
 
     "tab.activeBorderTop": "#0000",
     "tab.activeBorder": "#0000",
     "panelTitle.activeBorder": "#444444",
 
-    "editorSuggestWidget.highlightForeground": "#a78bfa",
-    "list.highlightForeground": "#cdd6f4",
+    "editorSuggestWidget.highlightForeground": "#b0b0b0",
+    "list.highlightForeground": "#b0b0b0",
     "list.activeSelectionBackground": "#2a2a2a",
     "list.inactiveSelectionBackground": "#1e1e1e",
     "list.hoverBackground": "#1a1a1a",
 
-    "editor.findMatchBackground": "#c4f04244",
-    "editor.findMatchHighlightBackground": "#c4f04222",
+    "editor.findMatchBackground": "#55555544",
+    "editor.findMatchHighlightBackground": "#55555522",
     "editorBracketHighlight.foreground1": "#888888",
     "editorBracketHighlight.foreground2": "#666666",
-    "editorBracketHighlight.foreground3": "#444444"
+    "editorBracketHighlight.foreground3": "#444444",
+
+    "scmGraph.foreground1": "#888888",
+    "scmGraph.foreground2": "#777777",
+    "scmGraph.foreground3": "#666666",
+    "scmGraph.foreground4": "#555555",
+    "scmGraph.foreground5": "#333333",
+    "scmGraph.historyItemRefColor": "#888888",
+    "scmGraph.historyItemRemoteRefColor": "#777777",
+    "scmGraph.historyItemBaseRefColor": "#666666",
+
+    "gitDecoration.addedResourceForeground": "#888888",
+    "gitDecoration.modifiedResourceForeground": "#777777",
+    "gitDecoration.deletedResourceForeground": "#555555",
+    "gitDecoration.renamedResourceForeground": "#888888",
+    "gitDecoration.untrackedResourceForeground": "#888888",
+    "gitDecoration.ignoredResourceForeground": "#555555",
+    "gitDecoration.conflictingResourceForeground": "#b0b0b0",
+    "gitDecoration.stageModifiedResourceForeground": "#777777",
+    "gitDecoration.stageDeletedResourceForeground": "#555555",
+
+    "terminal.ansiBlue": "#777777",
+    "terminal.ansiCyan": "#777777",
+    "terminal.ansiGreen": "#888888",
+    "terminal.ansiYellow": "#888888",
+    "terminal.ansiRed": "#b0b0b0",
+    "terminal.ansiMagenta": "#b0b0b0",
+
+    "symbolIcon.classForeground": "#777777",
+    "symbolIcon.constructorForeground": "#777777",
+    "symbolIcon.enumeratorForeground": "#888888",
+    "symbolIcon.variableForeground": "#888888",
+    "symbolIcon.methodForeground": "#777777",
+    "symbolIcon.functionForeground": "#777777",
+    "symbolIcon.interfaceForeground": "#777777",
+    "symbolIcon.moduleForeground": "#888888",
+    "symbolIcon.propertyForeground": "#888888",
+    "symbolIcon.fieldForeground": "#888888",
+    "symbolIcon.fileForeground": "#888888",
+    "symbolIcon.folderForeground": "#888888",
+    "symbolIcon.keywordForeground": "#555555",
+
+    "minimap.findMatchHighlight": "#555555",
+    "minimap.selectionHighlight": "#ffffff20",
+    "minimap.errorHighlight": "#b0b0b0",
+    "minimap.warningHighlight": "#888888"
   },
 
   "editor.tokenColorCustomizations": {
@@ -97,6 +143,7 @@
       {
         "scope": [
           "keyword", "keyword.control", "keyword.operator", "keyword.other", 
+          "keyword.other.unit", "keyword.other.unit.css", "keyword.other.unit.percentage.css",
           "storage", "storage.type", "storage.modifier", 
           "variable.language", "constant.language"
         ],
@@ -205,7 +252,7 @@
   "zenMode.silentNotifications": true,
 
   "vscode_custom_css.imports": [
-    "file:///Users/chamaththiwanka/.gemini/antigravity-ide/custom.css",
-    "file:///Users/chamaththiwanka/.gemini/antigravity-ide/custom.js"
+    "file://{{HOME_DIR}}/Library/Application Support/Ch X Gravity/User/custom.css",
+    "file://{{HOME_DIR}}/Library/Application Support/Ch X Gravity/User/custom.js"
   ]
 }
