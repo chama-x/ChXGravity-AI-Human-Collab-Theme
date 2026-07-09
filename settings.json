@@ -49,9 +49,9 @@
     "editorCursor.foreground": "#a78bfa",
     "terminalCursor.foreground": "#a78bfa",
 
-    "editor.selectionBackground": "#a78bfa",
+    "editor.selectionBackground": "#a78bfa44",
     "editor.selectionForeground": "#1a1a1a",
-    "editor.selectionHighlightBackground": "#a78bfa44",
+    "editor.selectionHighlightBackground": "#a78bfa22",
 
     "editorLineNumber.foreground": "#444444",
     "editorLineNumber.activeForeground": "#888888",
