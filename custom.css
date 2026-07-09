@@ -53,14 +53,14 @@
     background-color: #222222 !important;
 }
 
-/* ONLY the AI Chat Submit button gets the Hologram Haze accent. 
-   Engaging the AI is the core action. */
+/* AI Chat Submit button gets a clean, premium grayscale theme to preserve visual quietness. */
 .chat-input-container .monaco-button, .chat-input-toolbar .monaco-button {
-    background-color: #a78bfa !important;
-    color: #1a1a1a !important;
+    background-color: #333333 !important;
+    color: #b0b0b0 !important;
 }
 .chat-input-container .monaco-button:hover, .chat-input-toolbar .monaco-button:hover {
-    background-color: #f472b6 !important;
+    background-color: #444444 !important;
+    color: #ffffff !important;
 }
 
 /* ── 6. EXPLORER ROW MICRO-ANIMATIONS ───────────────────── */
